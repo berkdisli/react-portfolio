@@ -9,7 +9,7 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: false,
       backDelay: 1500,
-      backSpeed: 60,
+      backSpeed: 90,
       strings: ["Developer", "Engineer"],
     });
   }, []);
