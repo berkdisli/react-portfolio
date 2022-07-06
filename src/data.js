@@ -38,11 +38,3 @@ export const mobilePortfolio = [
         img: "assets/Myflix"
     },
 ];
-
-export const ggPortfolio = [
-    {
-        id: 1,
-        title: "Chit-Chat",
-        img: "assets/Myflix"
-    },
-]

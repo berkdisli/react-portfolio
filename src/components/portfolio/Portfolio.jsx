@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
-import { webPortfolio, mobilePortfolio, ggPortfolio } from "../../data";
+import { webPortfolio, mobilePortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("web");
@@ -15,10 +15,6 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    {
-      id: "mobile",
-      title: "gg App",
-    },
   ];
 
   useEffect(() => {
@@ -26,12 +22,11 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "web":
+      case "mobile":
         setData(mobilePortfolio);
         break;
-      case "web":
-        setData(ggPortfolio);
-        break;
+      default:
+        setData(webPortfolio);
     }
   }, [selected]);
 
