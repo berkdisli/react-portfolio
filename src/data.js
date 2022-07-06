@@ -29,12 +29,17 @@ export const webPortfolio = [
         title: "MyFlix App",
         img: "assets/Myflix"
     },
-
-
-
 ];
 
 export const mobilePortfolio = [
+    {
+        id: 1,
+        title: "Chit-Chat",
+        img: "assets/Myflix"
+    },
+];
+
+export const ggPortfolio = [
     {
         id: 1,
         title: "Chit-Chat",
