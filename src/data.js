@@ -2,7 +2,7 @@ export const webPortfolio = [
     {
         id: 1,
         title: "MyFlix React",
-        img: "https://berkdisli.github.io/portfolio/img/myflixclient.png"
+        img: "https://berkdisli.github.io/portfolio/img/myflixclient.png",
     },
     {
         id: 2,

@@ -8,9 +8,9 @@ export default function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: false,
-      backDelay: 1500,
+      backDelay: 1200,
       backSpeed: 90,
-      strings: ["Developer", "Engineer"],
+      strings: ["Developer"],
     });
   }, []);
 
@@ -18,7 +18,10 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/berk.jpeg" alt="berk" />
+          <img
+            src="https://berkdisli.github.io/portfolio/img/berk.jpeg"
+            alt="berk"
+          />
         </div>
       </div>
       <div className="right">
@@ -26,11 +29,14 @@ export default function Intro() {
           <h2>Hi There, I'm</h2>
           <h1>Berk Disli</h1>
           <h3>
-            Full Stack <span ref={textRef}></span>
+            Software <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/arrowDown.png" alt="arrow-down" />
+          <img
+            src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39091/preview.png"
+            alt="arrow-down"
+          />
         </a>
       </div>
     </div>
