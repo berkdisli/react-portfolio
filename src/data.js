@@ -1,33 +1,33 @@
 export const webPortfolio = [
     {
         id: 1,
-        title: "MyFlix App",
-        img: "assets/berk.jpeg"
+        title: "MyFlix React",
+        img: "https://berkdisli.github.io/portfolio/img/myflixclient.png"
     },
     {
         id: 2,
-        title: "MyFlix App",
-        img: "assets/Myflix"
+        title: "Pokédex",
+        img: "https://berkdisli.github.io/portfolio/img/pokedex.png"
     },
     {
         id: 3,
-        title: "MyFlix App",
-        img: "assets/Myflix"
+        title: "MyFlix Angular",
+        img: "https://berkdisli.github.io/portfolio/img/myflix-angular.png"
     },
     {
         id: 4,
-        title: "MyFlix App",
-        img: "assets/Myflix"
+        title: "Meet App",
+        img: "https://berkdisli.github.io/portfolio/img/meet.png"
     },
     {
         id: 5,
-        title: "MyFlix App",
-        img: "assets/Myflix"
+        title: "Weather App",
+        img: "https://berkdisli.github.io/portfolio/img/weather1.png"
     },
     {
         id: 6,
-        title: "MyFlix App",
-        img: "assets/Myflix"
+        title: "Calculator",
+        img: "https://berkdisli.github.io/portfolio/img/calculator.png"
     },
 ];
 
@@ -35,6 +35,6 @@ export const mobilePortfolio = [
     {
         id: 1,
         title: "Chit-Chat",
-        img: "assets/Myflix"
+        img: "https://berkdisli.github.io/portfolio/img/start.png"
     },
 ];
