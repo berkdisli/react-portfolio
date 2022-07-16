@@ -19,10 +19,25 @@ export default function Works() {
                 <span>Projects</span>
               </div>
             </div>
-            <div className="right"></div>
+            <div className="right">
+              <img
+                src="https://www.pngarts.com/files/7/Web-Design-PNG-Picture.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
+      <img
+        className="arrow left"
+        src="https://icon-library.com/images/arrow-icon-white/arrow-icon-white-29.jpg"
+        alt="leftarrow"
+      />
+      <img
+        className="arrow right"
+        src="https://icon-library.com/images/arrow-icon-white/arrow-icon-white-29.jpg"
+        alt="rightarrow"
+      />
     </div>
   );
 }
