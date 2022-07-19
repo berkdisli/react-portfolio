@@ -1,22 +1,23 @@
 @import "../../Global.scss";
 
 .portfolio{
-    background-color:rgb(198, 225, 241);
+    background-color:rgb(169, 212, 236);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h1{
         font-size: 50px;
+        color: rgb(255, 255, 255);
     }
 
     ul{
         margin: 10px;
-        padding: 0;
+        padding: 20px;
+        padding-right: 50px;
         list-style: none;
         display: flex;
-
-   
+        justify-content: center;  
 }
     .container{
         width: 70%;

@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="left">
         <img
-          src="https://cdn.pixabay.com/photo/2015/02/27/08/12/handshake-651818__480.png"
+          src="https://www.pngkey.com/png/full/49-495234_this-free-icons-png-design-of-handshake-003.png"
           alt=""
         />
       </div>
