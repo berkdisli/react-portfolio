@@ -6,9 +6,10 @@ export default function Works() {
   const data = [
     {
       id: 1,
-      icon: "https://cdn-icons-png.flaticon.com/512/65/65680.png",
-      title: "MyFlix React",
-      desc: "safasf",
+      icon: "https://cdn-icons-png.flaticon.com/512/244/244989.png",
+      title: "Hotel Website",
+      desc: "Created and built a web application for the tourism and hospitality sector.",
+      TechStack: "HTML, CSS, JavaScript, Google Maps, Weather API",
       img: "https://berkdisli.github.io/portfolio/img/myflixclient.png",
     },
     {
@@ -16,20 +17,14 @@ export default function Works() {
       icon: "",
       title: "Pokédex",
       desc: "safasf",
+      TechStack: "HTML,CSS basic javascript, Google Maps, Weather API",
       img: "https://berkdisli.github.io/portfolio/img/pokedex.png",
-    },
-    {
-      id: 3,
-      icon: "",
-      title: "MyFlix Angular",
-      desc: "safasf",
-      img: "https://berkdisli.github.io/portfolio/img/myflix-angular.png",
     },
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   return (
@@ -48,6 +43,8 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
+                  <p className="techStack">Tech Stack: </p>
+                  <p>{d.TechStack}</p>
                   <span>Projects</span>
                 </div>
               </div>

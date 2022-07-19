@@ -15,10 +15,6 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    {
-      id: "freelance",
-      title: "Project",
-    },
   ];
 
   useEffect(() => {
