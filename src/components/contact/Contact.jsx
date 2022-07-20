@@ -13,7 +13,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="left">
         <img
-          src="https://www.pngkey.com/png/full/49-495234_this-free-icons-png-design-of-handshake-003.png"
+          src="https://www.pngkey.com/png/full/932-9322358_vintage-pointing-hand-png.png"
           alt=""
         />
       </div>

@@ -16,7 +16,7 @@ export default function Works() {
       id: 2,
       icon: "https://png2.cleanpng.com/sh/e7cf0c5e58fd1d19a6027d10b1033755/L0KzQYm3U8I5N5VAiZH0aYP2gLBuTfJtaZRwRdh7aXTkiX7rigNkd6ZzjOU2YX7nPbLzjP94aZ9ofeU2c3HvdcS0kBhweKFuReVqbHWwRbLpgsgxP5U2T6I8NUexRoK7VcIzPmY2TaQ7MkO6RYe8UMk1O191htk=/kisspng-black-friday-discounts-and-allowances-sales-shoppi-sale-5abb807d170357.6145226515222375650943.png",
       title: "Real Estate Website",
-      desc: "Created and built a web application for the sale of the customer's houses, lands, fields etc.",
+      desc: "A web application for the sale of the customer's houses, lands, fields.",
       TechStack: "HTML, CSS, JavaScript, Google Maps, Weather API",
       img: "https://berkdisli.github.io/portfolio/img/pokedex.png",
     },
