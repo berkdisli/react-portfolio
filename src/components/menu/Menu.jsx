@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Menu(menuOpen, setMenuOpen) {
   return (
-    <div className={"menu-active menu" + (menuOpen && "active")}>
+    <div className={"active menu " + (menuOpen && "active")}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#intro">Home</a>
