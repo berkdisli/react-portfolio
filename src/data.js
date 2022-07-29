@@ -39,10 +39,3 @@ export const mobilePortfolio = [
     },
 ];
 
-export const freelancePortfolio = [
-    {
-        id: 1,
-        title: "Hotel Website",
-        img: "https://www.dadaotel.com/site/sized/102610/2021/07/e21798e7e59576c9b59a28a13e05abcc-9000x9000.jpg"
-    },
-];
