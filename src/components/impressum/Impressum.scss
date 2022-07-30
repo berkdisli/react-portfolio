@@ -1,0 +1,15 @@
+@import "../../Global.scss";
+
+.impressum{
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+
+    @include mobile {
+        font-size: 20px;
+    }
+
+    a{
+        color: #1b8b8b;
+        text-decoration: none;
+    }
+}

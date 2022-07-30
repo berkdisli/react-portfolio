@@ -3,6 +3,7 @@ import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Contact from "./components/contact/Contact";
+import Impressum from "./components/impressum/Impressum";
 import Menu from "./components/menu/Menu";
 import "./App.scss";
 import { useState } from "react";
@@ -18,6 +19,7 @@ function App() {
         <Portfolio />
         <Works />
         <Contact />
+        <Impressum />
       </div>
     </div>
   );

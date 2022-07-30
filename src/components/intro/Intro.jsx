@@ -21,7 +21,7 @@ export default function Intro() {
             <span>
               <Typewriter
                 options={{
-                  strings: ["Developer"],
+                  strings: ["Developer", "Entwickler"],
                   autoStart: true,
                   delay: 70,
                   loop: true,
