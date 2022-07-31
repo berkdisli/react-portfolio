@@ -1,7 +1,7 @@
 @import "../../Global.scss";
 
 .contact {
-    background-color: rgb(208, 209, 208);
+    background-color: rgb(241, 247, 233);
     display: flex;
 
     @include mobile {
@@ -11,8 +11,6 @@
     .left{
         flex: 1;
         overflow: hidden;
-        
-    
 
         img{
             width: 110%;
@@ -86,7 +84,12 @@
 
             span{
                 color: rgb(185, 16, 44);
-            }
+            }      
+        }   
+        .icons{
+            width: 40px;
+            cursor: pointer;
+            
         }
     }
 }
