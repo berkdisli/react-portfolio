@@ -27,6 +27,10 @@
                 color: inherit;
                 font-family: Brush Script MT;
                 margin-right: 40px;
+
+                @include mobile {
+                    font-family: Brush Script MT;
+                }
             }
 
             .itemContainer{
