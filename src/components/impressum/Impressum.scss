@@ -2,14 +2,34 @@
 
 .impressum{
     background-color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include mobile {
         font-size: 20px;
+        flex-direction: column;
     }
 
     a{
         color: #1b8b8b;
         text-decoration: none;
+    }
+
+    .left{
+        img{
+            width: 100%;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+
+    .right{
+        justify-content: center;
+        align-items: center; 
+        margin-left: 30px;     
     }
 }
