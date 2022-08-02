@@ -1,12 +1,31 @@
 import "./Contact.scss";
 import { useState } from "react";
+import { send } from "emailjs-com";
 
 export default function Contact() {
-  const [message, setMessage] = useState(false);
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    message: "",
+    reply_to: "",
+  });
 
-  const handleSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    setMessage(true);
+    send("service_j738hak", "template_o8u4j0c", toSend, "TFw4EGTJTBhF4ctAM")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+
+    alert(
+      "Your message has been sent successfully, I'll try to response as soon as possible."
+    );
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
   return (
@@ -19,13 +38,28 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+        <form onSubmit={onSubmit}>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your name"
+            value={toSend.from_name}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="reply_to"
+            placeholder="Your e-mail"
+            value={toSend.reply_to}
+            onChange={handleChange}
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            value={toSend.message}
+            onChange={handleChange}
+          />
           <button type="submit">Send</button>
-          {message && (
-            <span>Thanks, I'll try to reply as soon as possible.</span>
-          )}
         </form>
         <div>
           <a href="https://github.com/berkdisli">
@@ -37,8 +71,8 @@ export default function Contact() {
           </a>
           <a href="https://www.linkedin.com/in/berk-disli-06aa9397/">
             <img
-              className="icons"
-              src="https://png2.cleanpng.com/sh/0ff08b0c031e8eae1847cbd9cda5fd50/L0KzQYi4UsAzN5dmTZGAYUK1dIW6VPNibGY6UZCEOUizRImCU8E2OWM3S6MEOEi7Q4GBTwBvbz==/5a22d434cad559.9980489315122319888308.png"
+              className="linkedin"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg"
               alt="linkedin"
             />
           </a>

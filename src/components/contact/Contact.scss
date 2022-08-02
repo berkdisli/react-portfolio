@@ -1,95 +1,96 @@
 @import "../../Global.scss";
 
 .contact {
-    background-color: rgb(241, 247, 233);
+  background-color: rgb(244, 248, 237);
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      width: 110%;
+      float: right;
+      margin-top: 100px;
+
+      @include mobile {
+        float: top;
+        width: 90%;
+        transform: rotate(90deg);
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    @include mobile {
-        flex-direction: column;
+    h2 {
+      font-size: 30px;
     }
 
-    .left{
-        flex: 1;
-        overflow: hidden;
+    form {
+      width: 75%;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
 
-        img{
-            width: 110%;
-            float: right;
-            margin-top: 100px;
-    
-            @include mobile {
-                float: top;
-                width: 90%;
-                transform: rotate(90deg);
-                margin-top: 60px;
-            }
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
         }
-}
+      }
 
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
 
-        h2{
-            font-size: 30px;
+        @include mobile {
+          width: 200px;
+          height: 100px;
         }
+      }
 
-        form{
-            width: 75%;
-            height: 75%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+      button {
+        width: 150px;
+        height: 30px;
+        color: aliceblue;
+        background-color: crimson;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        cursor: pointer;
 
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-
-                @include mobile {
-                    width: 200px;
-                    height: 20px;      
-                }
-            }
-
-            textarea{
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-
-                @include mobile {
-                    width: 200px;
-                    height: 100px;      
-                }
-            }
-
-            button{
-                width: 150px;
-                height: 30px;
-                color: aliceblue;
-                background-color: crimson;
-                border: none;
-                border-radius: 5px;
-                font-weight: 500;
-                cursor: pointer;
-
-                &:focus{
-                    outline: none;
-                }
-            }
-
-            span{
-                color: rgb(185, 16, 44);
-            }      
-        }   
-        .icons{
-            width: 40px;
-            cursor: pointer;
-            
+        &:focus {
+          outline: none;
         }
+      }
     }
+    .icons {
+      width: 40px;
+      cursor: pointer;
+    }
+
+    .linkedin {
+      width: 36px;
+      cursor: pointer;
+      margin-bottom: 3px;
+    }
+  }
 }
