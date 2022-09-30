@@ -10,7 +10,6 @@ export default function Works() {
       title: "Hotel Website",
       desc: "Created and built a web application for the tourism and hospitality sector.",
       TechStack: "HTML, CSS, JavaScript, Google Maps, Weather API",
-      Link: "https://www.dadaotel.com/",
     },
     {
       id: 2,
@@ -18,7 +17,6 @@ export default function Works() {
       title: "Real Estate Website",
       desc: "A web application for the sale of the customer's houses, lands, fields.",
       TechStack: "HTML, CSS, JavaScript, Google Maps, Weather API",
-      Link: "https://www.ghmgayrimenkul.com/",
     },
   ];
 
@@ -45,7 +43,6 @@ export default function Works() {
                   <p>{d.desc}</p>
                   <p className="techStack">Tech Stack: </p>
                   <p>{d.TechStack}</p>
-                  <span> Project: </span>
                   <p>{d.Link}</p>
                 </div>
               </div>
