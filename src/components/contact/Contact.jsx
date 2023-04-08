@@ -69,7 +69,7 @@ export default function Contact() {
               alt="github"
             />
           </a>
-          <a href="https://www.linkedin.com/in/berk-disli-06aa9397/">
+          <a href="https://www.linkedin.com/in/berkdisli/">
             <img
               className="linkedin"
               src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg"
