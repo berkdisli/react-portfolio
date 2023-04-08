@@ -32,7 +32,7 @@ export const webPortfolio = [
     {
         id: 6,
         title: "Countries",
-        img: "https://berkdisli.github.io/portfolio/img/calculator.png",
+        img: "https://raw.githubusercontent.com/berkdisli/react-portfolio/master/public/assets/countries.png",
         link: "https://github.com/berkdisli/countries"
     },
 ];
