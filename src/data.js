@@ -41,7 +41,8 @@ export const mobilePortfolio = [
     {
         id: 1,
         title: "Chit-Chat",
-        img: "https://berkdisli.github.io/portfolio/img/start.png"
+        img: "https://berkdisli.github.io/portfolio/img/start.png",
+        link: "https://github.com/berkdisli/Chit-Chat"
     },
 ];
 
